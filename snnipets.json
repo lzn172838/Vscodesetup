@@ -1,0 +1,168 @@
+{
+
+ "Java Main Method": {
+    "prefix": "psvm",
+    "body": [
+      "public static void main(String[] args) {",
+      "    $0",
+      "}"
+    ],
+    "description": "Método main"
+  },
+
+ "System Out Println": {
+    "prefix": "sout",
+    "body": [
+      "System.out.println(${1});"
+    ],
+    "description": "Print no console"
+  },
+
+   "System Out Print": {
+    "prefix": "sop",
+    "body": [
+      "System.out.print(${1});"
+    ],
+    "description": "Print sem quebra de linha"
+  },
+
+  "For Loop": {
+    "prefix": "fori",
+    "body": [
+      "for (int i = 0; i < ${1:limite}; i++) {",
+      "    $0",
+      "}"
+    ],
+    "description": "Laço for com i"
+  },
+
+  "While Loop": {
+    "prefix": "wh",
+    "body": [
+      "while (${1:condicao}) {",
+      "    $0",
+      "}"
+    ],
+    "description": "Laço while"
+  },
+
+   "If Statement": {
+    "prefix": "iff",
+    "body": [
+      "if (${1:condicao}) {",
+      "    $0",
+      "}"
+    ],
+    "description": "Estrutura if"
+  },
+
+   "If Else": {
+    "prefix": "ife",
+    "body": [
+      "if (${1:condicao}) {",
+      "    ${2}",
+      "} else {",
+      "    $0",
+      "}"
+    ],
+    "description": "Estrutura if else"
+  },
+
+   "Else If": {
+    "prefix": "elif",
+    "body": [
+      "else if (${1:condicao}) {",
+      "    $0",
+      "}"
+    ],
+    "description": "Estrutura else if"
+  },
+
+    "Try Catch": {
+    "prefix": "tryc",
+    "body": [
+      "try {",
+      "    $0",
+      "} catch (Exception e) {",
+      "    e.printStackTrace();",
+      "}"
+    ],
+    "description": "Bloco try catch"
+  },
+
+  "Import Scanner": {
+    "prefix": "impscan",
+    "body": [
+      "import java.util.Scanner;"
+    ],
+    "description": "Importa Scanner"
+  },
+
+  "Scanner Declaration": {
+    "prefix": "scan",
+    "body": [
+      "Scanner scanner = new Scanner(System.in);"
+    ],
+    "description": "Cria Scanner"
+  },
+
+  "Java Class": {
+    "prefix": "jclass",
+    "body": [
+      "public class ${1:NomeClasse} {",
+      "",
+      "    $0",
+      "",
+      "}"
+    ],
+    "description": "Classe Java"
+  },
+
+  "Java Class with Main": {
+    "prefix": "jmain",
+    "body": [
+      "public class ${1:NomeClasse} {",
+      "",
+      "    public static void main(String[] args) {",
+      "        $0",
+      "    }",
+      "",
+      "}"
+    ],
+    "description": "Classe Java com main"
+  },
+
+
+  "Constructor": {
+    "prefix": "ctor",
+    "body": [
+      "public ${1:NomeClasse}(${2}) {",
+      "    $0",
+      "}"
+    ],
+    "description": "Construtor"
+  },
+
+
+  "Getter": {
+    "prefix": "getter",
+    "body": [
+      "public ${1:Tipo} get${2:Nome}() {",
+      "    return ${3:variavel};",
+      "}"
+    ],
+    "description": "Getter"
+  },
+
+  "Setter": {
+    "prefix": "setter",
+    "body": [
+      "public void set${1:Nome}(${2:Tipo} ${3:variavel}) {",
+      "    this.${3:variavel} = ${3:variavel};",
+      "}"
+    ],
+    "description": "Setter"
+  }
+
+
+}
