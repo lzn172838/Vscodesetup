@@ -1,0 +1,13 @@
+josemurilloc.aura-spirit-dracula
+lakshits11.best-themes-redefined
+openai.chatgpt
+pkief.material-icon-theme
+pkief.material-product-icons
+redhat.java
+subframe7536.custom-ui-style
+vscjava.vscode-gradle
+vscjava.vscode-java-debug
+vscjava.vscode-java-dependency
+vscjava.vscode-java-pack
+vscjava.vscode-java-test
+vscjava.vscode-maven
