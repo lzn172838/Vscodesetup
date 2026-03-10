@@ -1,12 +1,26 @@
-Write-Host "Instalando as extensões no VS Code"
+Write-Host "Instalando extensões no VS Code"
+
+$installed = code --list-extensions
 
 Get-Content .\extensions.txt | ForEach-Object {
+
     $extension = $_.Trim()
 
     if ($extension -ne "") {
-        Write-Host "Instalando $extension ..."
-        code --install-extension $extension
+
+        if ($installed -contains $extension) {
+
+            Write-Host "$extension já está instalada." -ForegroundColor Yellow
+
+        } else {
+
+            Write-Host "Instalando $extension ..." -ForegroundColor Green
+            code --install-extension $extension
+
+        }
+
     }
+
 }
 
-Write-Host "Todas as extensões foram instaladas!"
+Write-Host "Instalação finalizada"
