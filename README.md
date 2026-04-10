@@ -1,6 +1,15 @@
 # VS Code Minimal Setup
 
-A clean and minimal Visual Studio Code configuration.
+Minimal VS Code setup focused on a cleaner interface and a lightweight editing experience.
 
-This setup removes most UI elements and keeps only what is necessary for writing code.
+## Files
 
+- `settings.json`: editor and workbench preferences
+- `keybinds.json`: custom keyboard shortcuts
+- `extensions.txt`: installed extensions list
+- `snippets.json`: custom snippets
+
+## Notes
+
+- `extensions.txt` can be used with `code --install-extension` in a loop to restore extensions.
+- The repository ignores the local `.codex` helper file through `.gitignore`.
