@@ -64,7 +64,7 @@
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyleInactive": "outline",
-    "terminal.integrated.cursorWidth": 5,
+    "terminal.integrated.cursorWidth": 4,
     "editor.fontFamily": "Aporêtic Mono, 'Fira Code', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "chat.editor.fontWeight": "450",
